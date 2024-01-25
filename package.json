@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2"
-  }
+  },
+  "name": "dizplaitechtest",
+  "description": "��#\u0000 \u0000D\u0000i\u0000z\u0000p\u0000l\u0000a\u0000i\u0000T\u0000e\u0000c\u0000h\u0000T\u0000e\u0000s\u0000t\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixMilan/DizplaiTechTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelixMilan/DizplaiTechTest/issues"
+  },
+  "homepage": "https://github.com/FelixMilan/DizplaiTechTest#readme"
 }
