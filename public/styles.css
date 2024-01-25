@@ -1,46 +1,73 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/Outfit/Outfit-Bold.ttf') format('ttf');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Outfit-Bold';
     justify-content: center;
     text-align: center;
-  }
+    background-image: url('./assets/background.jpg');
+    background-color: purple;
+}
   
-  h1, h2 {
-    color: #333;
-  }
+h1, h2 {
+    font-family: 'Outfit-Bold';
+    color: #ffffff;
+}
   
-  #options {
+#options {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  button {
-    margin-top: 10px;
-    padding: 10px;
+button {
+    border: 2px solid #8C8C8C;
+    border-radius: 4px;
+    text-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
-  }
+    width: 40%;
+}
 
-  .button:hover {
-    background-color:#002ead;
-    transition: 0.7s;
-  }
+button.
 
-  button:focus {
+button.background {
+    background-color: #8C8C8C;
+    opacity: 0.5;
+}
+
+button:hover {
+    background-color:#8C8C8C;
+    opacity: 1.0;
+    transition: 0.2s;
+}
+
+button:focus {
     outline-color: transparent;
     outline-style:solid;
     box-shadow: 0 0 0 4px #5a01a7;
-  }
+}
   
-  #selectedOption {
+#selectedOption {
     margin-top: 10px;
     color: #333
-  }
+}
 
-  #selectedOption:focus {     
+#selectedOption:focus {     
     background-color:rgb(89, 0, 255);    
-  }
+}
 
-  #results {
+#results {
     position: block;
-  }
+}
   
+#dizplaiLogo {
+    width: 25%;
+    height: relative;
+}
