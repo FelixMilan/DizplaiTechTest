@@ -36,8 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
               selectedOption,
             }),
           });
-  
-          // Redirect to confirmation page
           window.location.href = '/confirmation.html';
         });
       });

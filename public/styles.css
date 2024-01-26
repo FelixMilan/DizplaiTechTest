@@ -1,10 +1,12 @@
 @font-face {
     font-family: 'Outfit';
-    src: url('./assets/Outfit/Outfit-Bold.ttf') format('ttf');
+    src: url('./assets/Outfit/Outfit-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-stretch: 50% 200%;
 }
 
 body {
-    font-family: 'Outfit-Bold';
+    font-family: 'Outfit';
     justify-content: center;
     text-align: center;
     background-image: url('./assets/background.jpg');
@@ -16,7 +18,7 @@ body.background-size {
 }
   
 h1, h2 {
-    font-family: 'Outfit-Bold';
+    font-family: 'Outfit';
     color: #ffffff;
 }
   
@@ -25,8 +27,16 @@ h1, h2 {
     flex-direction: column;
     align-items: center;
 }
-  
+
+button.disabled {
+    background-color: #8C8C8C;
+    opacity: 0.3;
+}
+
 button {
+    background-color: rgb(140, 140, 140, 0.3);
+    font-family: 'Outfit';
+    color: #ffffff;
     border: 2px solid #8C8C8C;
     border-radius: 4px;
     padding: 30px 32px;
@@ -39,13 +49,8 @@ button {
     margin-top: 30px;
 }
 
-button.background {
-    background-color: #8C8C8C;
-    opacity: 0.5;
-}
-
 button:hover {
-    background-color:#8C8C8C;
+    background-color: #996BF9;
     opacity: 1.0;
     transition: 0.2s;
 }
@@ -53,27 +58,36 @@ button:hover {
 button:focus {
     outline-color: transparent;
     outline-style:solid;
-    box-shadow: 0 0 0 4px #5a01a7;
-}
-  
-#selectedOption {
-    border: 2px solid #8C8C8C;
-    border-radius: 4px;
-    padding: 30px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    width: 40%;
-    margin-top: 30px;
+    background-color: #996BF9;
 }
 
-#selectedOption:focus {     
-    background-color:rgb(89, 0, 255);    
+button:disabled {
+    opacity: 0.3;
+}
+
+#voteButton {
+    background-color: #ffffff;
+    color: #996BF9;
+}
+
+#voteButton:hover {
+    color: #ffffff;
+    background-color: #996BF9;
+    transition: 0.2s;
 }
 
 #results {
+    margin-bottom: 10px;
+}
+  
+#dizplaiLogo {
+    margin-top: 50px;
+    width: 250px;
+}
+
+.result-item {
+    background-color: rgb(140, 140, 140, 0.3);
+    color: #ffffff;
     position: block;
     border: 2px solid #8C8C8C;
     border-radius: 4px;
@@ -86,9 +100,6 @@ button:focus {
     width: 40%;
     margin-top: 30px;
     color: #ffffff;
-}
-  
-#dizplaiLogo {
-    margin-top: 50px;
-    width: 250px;
-}
+ }
+
+ 

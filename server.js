@@ -10,8 +10,7 @@ app.use(bodyParser.json());
 // Example poll data
 const examplePoll = {
   id: 'example-poll',
-  question: 'Who will win the',
-  question: 'Premier League?',
+  question: 'Who will win the Premier League?',
   options: ['Manchester City', 'Arsenal', 'Liverpool'],
 };
 
