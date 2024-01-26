@@ -10,11 +10,14 @@ body {
     justify-content: center;
     text-align: center;
     background-image: url('./assets/background.jpg');
+    /* background-size: contain;
+    background-repeat: no-repeat; */
 }
 
 body.background-size {
-    width: 100%;
-    height: relative;
+    background-size: 100vw 100vh;
+    /* min-width: 100vw;
+    min-height: 100vw; */
 }
   
 h1, h2 {
@@ -65,12 +68,12 @@ button:disabled {
     opacity: 0.3;
 }
 
-#voteButton {
+#voteButton, #voteAgain {
     background-color: #ffffff;
     color: #996BF9;
 }
 
-#voteButton:hover {
+#voteButton:hover, #voteAgain:hover {
     color: #ffffff;
     background-color: #996BF9;
     transition: 0.2s;
@@ -97,9 +100,9 @@ button:disabled {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    width: 40%;
+    width: 38%;
     margin-top: 30px;
     color: #ffffff;
- }
+}
 
  
